@@ -46,8 +46,11 @@
             box-shadow:0px 0px 5px 5px rgb(88, 88, 88),inset 0px 0px 3px 3px rgb(161, 161, 161);
         }
 
-        .navbar-one ul li {
-            display: inline-block;
+        .navbar-one ul  {
+            display: inline-flex;
+             
+        }   .navbar-one ul li {
+            /* display: inline-block; */
             list-style:none;
             transition: .5s;
         }
@@ -173,7 +176,7 @@
             background-repeat: no-repeat;
             background: #33220b;
             background-repeat: no-repeat;
-            background-image: url(coffe/try21.png);
+            background-image: url(images/try21.png);
             background-size: 39%;
             padding: 50px 25px;
             min-height: 85vh;
@@ -223,9 +226,11 @@
         }
 
         .types-cards{
-            justify-content: center;
-            text-align: center;
             display: flex;
+            flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
         } 
 
         .crad-one {
@@ -406,9 +411,9 @@
                 min-height: 25vh;
             }
 
-            .types-cards {
+            /* .types-cards {
                 display: grid;
-            }
+            } */
 
             .soi-cone a i {
                 margin: 4px;
@@ -428,7 +433,7 @@
             }
 
             .sectionone{
-                background: url(coffe/try33.jpg) no-repeat;
+                background: url(images/try33.jpg) no-repeat;
                 background-position: center center;
                 background-attachment: fixed;
                 min-height: 62vh;
@@ -453,9 +458,9 @@
                 min-height: 34vh;
             }
 
-            .types-cards {
+            /* .types-cards {
                 display: grid;
-            }
+            } */
 
             .soi-cone a i{
                 margin: 7px;
@@ -464,7 +469,7 @@
         }
         @media screen and (min-width:375px) and (max-width:768px) {
             .sectionone{
-                background-image: url(coffe/try17.jpg);
+                background-image: url(images/try17.jpg);
                 min-height: 76vh;
                 padding: 0;
             }
@@ -499,9 +504,9 @@
                 min-height: 36vh;
             }
 
-            .types-cards {
+            /* .types-cards {
                 display: grid;
-            }
+            } */
 
             .soi-cone a i{
                 margin: 6px;
@@ -518,7 +523,7 @@
             }
 
             .sectionone{
-                background-image:url(coffe/try20.jpg);
+                background-image:url(images/try20.jpg);
                 min-height: 80vh;
                 padding: 0;
 
@@ -542,9 +547,12 @@
                 min-height:33vh;
             }
 
-            .types-cards {
-                display: grid;
-            }
+            /* .types-cards {
+               flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+            } */
 
             .soi-cone a i{
                 margin: 8px;
